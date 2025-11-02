@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  font-family: "Montserrat";
+}
+
+/* Ensure the body and html take up the full height to allow the root element to stretch */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.root-layout {
+  min-height: 100vh; 
+  
+  /* 🏞️ Image Background Implementation 🏞️ */
+  
+  /* Reference the image using the path relative to the site's root (the public folder) */
+  background-image: url('/Rectangle 16.png'); 
+  
+  /* Ensures the image covers the entire container without repeating */
+  background-size: cover;
+  
+  /* Centers the image within the container */
+  background-position: center center;
+  
+  /* Ensures the image remains fixed when the user scrolls */
+  background-attachment: fixed;
+  
+  /* Prevents the image from repeating */
+  background-repeat: no-repeat;
+}
+
+/* Optional: You may want to ensure the main content is readable */
+.root-layout main {
+  padding: 20px; 
+  /* Example: Set text color to white if the image is dark */
+  color: white; 
+}
