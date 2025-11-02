@@ -14,6 +14,15 @@ html, body, #root {
   padding: 0;
 }
 
+.span{
+  background: linear-gradient(to bottom right, rgba(153, 165, 219, 0.919), rgba(147, 74, 226, 0.377))
+}
+
+.span-2{
+  background: linear-gradient(to bottom right, rgba(56, 144, 245, 0.521), rgba(147, 74, 226, 0.377))
+}
+
+
 .root-layout {
   min-height: 100vh; 
   
