@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const IconicRobots = () => {
   const popCultureRobots = [
@@ -74,7 +75,7 @@ const IconicRobots = () => {
       desc: "Courageous scout and a skilled warrior of the Autobots, transforming into a sports car and protecting humanity.",
       badgeColor: "bg-yellow-500/20 text-yellow-300 border-yellow-500/30",
     },
-        {
+    {
       name: "E.D.I.T.H.",
       img: "/EDITH.webp",
       universe: "Marvel / Spider-Man",
@@ -148,9 +149,12 @@ const IconicRobots = () => {
 
             <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-white/50">
               <span>Status: Legend</span>
-              <span className="text-indigo-400 font-semibold cursor-pointer hover:underline">
+              <Link
+                to={`/robot-story/${encodeURIComponent(bot.name)}`}
+                className="text-indigo-400 font-semibold hover:underline"
+              >
                 Explore Story →
-              </span>
+              </Link>
             </div>
           </div>
         ))}

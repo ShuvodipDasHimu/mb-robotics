@@ -47,6 +47,19 @@ const Header = () => {
           Resources
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/iconic-robots"
+          onClick={closeDropdown}
+          className={({ isActive }) =>
+            isActive 
+              ? "text-indigo-400 font-bold bg-white/10" 
+              : "text-white hover:text-indigo-400 focus:text-indigo-400"
+          }
+        >
+          Iconic Robots
+        </NavLink>
+      </li>
     </>
   );
 
@@ -93,7 +106,7 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <NavLink to="/products" className="btn btn-primary bg-indigo-400 border-none btn-md lg:btn-lg px-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+        <NavLink to="/products" className="btn btn-primary btn-md lg:btn-lg px-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
           Get Started
         </NavLink>
       </div>

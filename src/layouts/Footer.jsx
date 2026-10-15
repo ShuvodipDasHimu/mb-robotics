@@ -18,6 +18,7 @@ const Footer = () => {
           <NavLink to="/" className={({ isActive }) => isActive ? "text-indigo-400 font-bold" : "text-white hover:text-indigo-400 transition-colors"}>Home</NavLink>
           <NavLink to="/products" className={({ isActive }) => isActive ? "text-indigo-400 font-bold" : "text-white hover:text-indigo-400 transition-colors"}>Products</NavLink>
           <NavLink to="/resources" className={({ isActive }) => isActive ? "text-indigo-400 font-bold" : "text-white hover:text-indigo-400 transition-colors"}>Resources</NavLink>
+          <NavLink to="/iconic-robots" className={({ isActive }) => isActive ? "text-indigo-400 font-bold" : "text-white hover:text-indigo-400 transition-colors"}>Iconic Robots</NavLink>
         </div>
       </nav>
     </footer>
