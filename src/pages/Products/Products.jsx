@@ -17,17 +17,28 @@ const Products = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {allProducts.map((prod, idx) => (
-          <div key={idx} className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md flex flex-col justify-between hover:border-indigo-400/50 transition-all">
+          <div 
+            key={idx} 
+            className="bg-white/5 border border-white/10 rounded-3xl p-6 backdrop-blur-md flex flex-col justify-between hover:border-indigo-400 hover:shadow-[0_0_25px_rgba(129,140,248,0.5)] hover:-translate-y-2 transition-all duration-300 cursor-pointer"
+          >
             <div>
-              <span className="text-xs px-3 py-1 bg-indigo-400/20 text-indigo-400 font-semibold rounded-full">{prod.category}</span>
+              <span className="text-xs px-3 py-1 bg-indigo-400/20 text-indigo-400 font-semibold rounded-full border border-indigo-400/30">
+                {prod.category}
+              </span>
               <div className="h-48 flex items-center justify-center my-6">
-                <img src={prod.img} alt={prod.name} className="max-h-full object-contain drop-shadow-xl" />
+                <img 
+                  src={prod.img} 
+                  alt={prod.name} 
+                  className="max-h-full object-contain drop-shadow-xl hover:scale-110 transition-transform duration-300" 
+                />
               </div>
               <h2 className="text-2xl font-bold">{prod.name}</h2>
             </div>
             <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
               <span className="text-lg font-semibold text-indigo-400">{prod.price}</span>
-              <button className="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white border-none rounded-xl px-4">Inquire</button>
+              <button className="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white border-none rounded-xl px-4 hover:shadow-[0_0_15px_rgba(129,140,248,0.6)] transition-all duration-300">
+                Inquire
+              </button>
             </div>
           </div>
         ))}

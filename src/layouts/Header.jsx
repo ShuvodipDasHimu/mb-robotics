@@ -106,10 +106,13 @@ const Header = () => {
       </div>
 
       <div className="navbar-end">
-        <NavLink to="/products" className="btn btn-primary btn-md lg:btn-lg px-6 rounded-2xl shadow-lg hover:scale-105 transition-transform">
-          Get Started
-        </NavLink>
-      </div>
+  <NavLink 
+    to="/products" 
+    className="btn bg-indigo-500 hover:bg-indigo-600 text-white border-none btn-md lg:btn-lg px-6 rounded-2xl shadow-lg hover:scale-105 transition-all duration-300 focus:ring-2 focus:ring-indigo-400"
+  >
+    Get Started
+  </NavLink>
+</div>
     </div>
   );
 };

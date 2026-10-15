@@ -28,39 +28,39 @@ const Hero = () => {
           </span> 
           */}
           
-          <img className="w-full max-w-xs object-contain drop-shadow-2xl" src="/robot.png" alt="Oditi AI Robot" />
+          <img className="w-full max-w-xs object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500" src="/robot.png" alt="Oditi AI Robot" />
           
-          {/* Constrained width so it doesn't widen out too much */}
-          <span className="mt-4 bg-gradient-to-br from-blue-500/60 to-purple-600/60 backdrop-blur-md w-full max-w-xs sm:max-w-sm text-sm sm:text-base rounded-lg p-4 font-medium shadow-xl border border-white/10 text-center">
+          {/* Constrained width with hover effect */}
+          <span className="mt-4 bg-gradient-to-br from-blue-500/60 to-purple-600/60 backdrop-blur-md w-full max-w-xs sm:max-w-sm text-sm sm:text-base rounded-lg p-4 font-medium shadow-xl border border-white/10 text-center hover:border-indigo-400 hover:shadow-[0_0_20px_rgba(129,140,248,0.4)] transition-all duration-300">
             🤖 Oditi, our newly invented robot, she is definitely a threat for humans
           </span>
         </div>
       </div>
 
-      {/* Robot Cards Grid */}
+      {/* Robot Cards Grid with Hover Effects */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 py-12">
-        <div className="flex flex-col justify-center bg-[#6c598e] gap-4 px-10 py-10 rounded-3xl shadow-2xl">
-          <img className="w-1/3 self-center" src="/Bio Robot.png" alt="" />
+        <div className="flex flex-col justify-center bg-[#6c598e] gap-4 px-10 py-10 rounded-3xl shadow-2xl border border-white/10 hover:border-indigo-400 hover:shadow-[0_0_25px_rgba(129,140,248,0.5)] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+          <img className="w-1/3 self-center drop-shadow-md hover:scale-110 transition-transform duration-300" src="/Bio Robot.png" alt="" />
           <h1 className="font-semibold text-2xl">Bio-Robot</h1>
-          <p className="text-sm">Its adaptable design allows it to adapt to various roles, from environmental monitoring to medical assistance</p>
+          <p className="text-sm text-white/90">Its adaptable design allows it to adapt to various roles, from environmental monitoring to medical assistance</p>
         </div>
 
-        <div className="flex flex-col justify-center bg-[#cb7b74] gap-4 px-10 py-10 rounded-3xl shadow-2xl">
-          <img className="w-1/3 self-center" src="/Incruiser.png" alt="" />
+        <div className="flex flex-col justify-center bg-[#cb7b74] gap-4 px-10 py-10 rounded-3xl shadow-2xl border border-white/10 hover:border-indigo-400 hover:shadow-[0_0_25px_rgba(129,140,248,0.5)] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+          <img className="w-1/3 self-center drop-shadow-md hover:scale-110 transition-transform duration-300" src="/Incruiser.png" alt="" />
           <h1 className="font-semibold text-2xl">Incruiser</h1>
-          <p className="text-sm">The engine-like design could enable the robot to perform highly precise movements and tasks</p>
+          <p className="text-sm text-white/90">The engine-like design could enable the robot to perform highly precise movements and tasks</p>
         </div>
 
-        <div className="flex flex-col justify-center bg-[#576c8f] gap-4 px-10 py-10 rounded-3xl shadow-2xl">
-          <img className="w-1/3 self-center" src="/Mechabot.png" alt="" />
+        <div className="flex flex-col justify-center bg-[#576c8f] gap-4 px-10 py-10 rounded-3xl shadow-2xl border border-white/10 hover:border-indigo-400 hover:shadow-[0_0_25px_rgba(129,140,248,0.5)] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+          <img className="w-1/3 self-center drop-shadow-md hover:scale-110 transition-transform duration-300" src="/Mechabot.png" alt="" />
           <h1 className="font-semibold text-2xl">Mechabot</h1>
-          <p className="text-sm">The robot is equipped with sensors and vision systems to inspect engine components for defects.</p>
+          <p className="text-sm text-white/90">The robot is equipped with sensors and vision systems to inspect engine components for defects.</p>
         </div>
 
-        <div className="flex flex-col justify-center bg-[#4b6687] gap-4 px-10 py-10 rounded-3xl shadow-2xl">
-          <img className="w-1/3 self-center" src="/Visibot.png" alt="" />
+        <div className="flex flex-col justify-center bg-[#4b6687] gap-4 px-10 py-10 rounded-3xl shadow-2xl border border-white/10 hover:border-indigo-400 hover:shadow-[0_0_25px_rgba(129,140,248,0.5)] hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+          <img className="w-1/3 self-center drop-shadow-md hover:scale-110 transition-transform duration-300" src="/Visibot.png" alt="" />
           <h1 className="font-semibold text-2xl">Visibot</h1>
-          <p className="text-sm">They offer advanced features like augmented reality, real-time translations, and seamless integration</p>
+          <p className="text-sm text-white/90">They offer advanced features like augmented reality, real-time translations, and seamless integration</p>
         </div>
       </div>
     </>
