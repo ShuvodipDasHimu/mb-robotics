@@ -66,27 +66,29 @@ const Header = () => {
   return (
     <div className="navbar text-white py-4 relative">
       <div className="navbar-start">
-        {/* Mobile Burger Toggle Button */}
-        <button
-          className="btn btn-ghost lg:hidden text-white z-50"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle Menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
+        {/* Mobile Burger Toggle Button - Hidden when menu is open */}
+        {!isOpen && (
+          <button
+            className="btn btn-ghost lg:hidden text-white z-50"
+            onClick={() => setIsOpen(true)}
+            aria-label="Open Menu"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h8m-8 6h16"}
-            />
-          </svg>
-        </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-7 w-7"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </button>
+        )}
 
         <NavLink to="/" className="btn btn-ghost text-2xl font-bold tracking-wider hover:text-indigo-400">
           MB Robotics
@@ -110,11 +112,12 @@ const Header = () => {
 
       {/* Full-Screen Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 w-full h-screen bg-slate-950/95 backdrop-blur-2xl z-40 flex flex-col justify-center items-center p-6 lg:hidden">
-          {/* Close button top right */}
+        <div className="fixed inset-0 w-full h-screen bg-slate-950/95 backdrop-blur-2xl z-50 flex flex-col justify-center items-center p-6 lg:hidden">
+          {/* Single Close Button on Top Right */}
           <button 
             onClick={closeDropdown}
             className="absolute top-6 right-6 text-white/70 hover:text-white text-3xl p-2"
+            aria-label="Close Menu"
           >
             ✕
           </button>
